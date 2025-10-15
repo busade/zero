@@ -56,7 +56,7 @@ async def  info():
 
     
     response= await fetch_cat()
-    current_datetime=(datetime.now()).isoformat().replace("+00:00", "Z")
+    current_datetime=(datetime.now()).isoformat()+ "Z"
         
     response_data={
         "status":"success",
