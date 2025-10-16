@@ -1,0 +1,25 @@
+{
+  "name": "zero",
+  "version": "1.0.0",
+  "description": "This is a simple FastAPI project with a single `/` endpoint. The project also includes CORS support and auto-generated documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/busade/zero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/busade/zero/issues"
+  },
+  "homepage": "https://github.com/busade/zero#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
