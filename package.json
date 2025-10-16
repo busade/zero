@@ -1,9 +1,10 @@
 {
   "name": "zero",
   "version": "1.0.0",
-  "description": "This is a simple FastAPI project with a single `/` endpoint. The project also includes CORS support and auto-generated documentation.",
-  "main": "index.js",
+  "description": "This is a simple Express project with a single `/me` endpoint. The project also includes CORS support.",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
