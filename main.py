@@ -27,7 +27,14 @@ data= {
         "name": "Busari Adesola Issah",
         "stack": "Python/Flask"
     }
-HTTP_CLIENT=httpx.AsyncClient()
+@app.on_event("startup")
+async def startup_event():
+    app.state.http_client = httpx.AsyncClient()
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    await app.state.http_client.aclose()
+
 
 async def fetch_cat() -> str:
     """Fetch random cat fact"""
