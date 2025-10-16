@@ -42,7 +42,7 @@ app.get('/me', async (req, res) => {
     status: "success",
     user: data,
     timestamp: currentDatetime,
-    fun_fact: funFact
+    fact: funFact
   });
 });
 
